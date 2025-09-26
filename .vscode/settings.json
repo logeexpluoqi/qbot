@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "cmath": "cpp",
+        "random": "cpp",
+        "limits": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "dense": "cpp"
+    },
+    "cmake.generator": "Unix Makefiles"
+}

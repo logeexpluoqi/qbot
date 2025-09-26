@@ -7,4 +7,6 @@ file(GLOB SRC
 add_library(qbot)
 
 target_sources(qbot PRIVATE ${SRC})
-target_include_directories(qbot PRIVATE ${CMAKE_SOURCE_DIR})
+target_include_directories(qbot PRIVATE 
+    ${CMAKE_SOURCE_DIR}/3rd
+)

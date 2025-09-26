@@ -26,6 +26,7 @@ file(GLOB SRC
 add_executable(${PROJECT_NAME})
 
 add_subdirectory(src)
+add_subdirectory(3rd)
 
 target_sources(${PROJECT_NAME} PRIVATE 
     ${SRC}
@@ -33,10 +34,11 @@ target_sources(${PROJECT_NAME} PRIVATE
 
 target_include_directories(${PROJECT_NAME} PRIVATE 
     ${CMAKE_SOURCE_DIR}
+    ${CMAKE_SOURCE_DIR}/3rd
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
-    qbot
+    3rd
 )
 
 if(WIN32)
